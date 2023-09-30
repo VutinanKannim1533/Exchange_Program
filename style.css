@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200&family=Niramit:wght@200&family=Poppins:wght@300&display=swap');
+/* จะต้องใส่ด้วยเวลาจะนำ Font Style มาใช้โดยจะไม่เหมือนกันทุกอัน ขึ้นอยู่กับ Font Style ที่เราเลือก  */
+
+* {
+    /* ที่มี " * " หมายถึงทุกส่วนจะถูกตกแต่งทั้งหน้าเว็บ  */
+    box-sizing: border-box;
+    /* เป็นส่วนที่ทำให้ Width มีค่าเท่ากับที่เรากำหนดไว้ */
+    font-family: 'Kanit', sans-serif;
+    /* Font ที่จะตกแต่ง */
+    font-family: 'Mitr', sans-serif;
+    font-family: 'Niramit', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    /* เป็นส่วนที่ไว้สำหรับตกแต่งในส่วนของ Body * ไม่ต้องใส่จุดนะ */
+    background-color: #fff;
+    display: flex;
+    /* เป็นที่จัด Div ต่างในส่วนของ Body */
+    flex-direction: column;
+    /* เอาไว้สำหรับกำหนดการจัดเรียง Flex Item ให้เป็นแนวตั้งจากบนลงล่าง */
+    align-items: center;
+    /* Item แต่ละตัวใน Body อยู่ตรงกลาง */
+    justify-content: center;
+    /*  เป็นการกำหนดการจัดตำแหน่งของ Flex Item ภายใน Flex Container */
+    height: 100vh;
+    /* ความสูงของ Body */
+    margin: 0;
+    padding: 20px;
+}
+
+.btn {
+    /* เป็นส่วนที่ไว้สำหรับตกแต่งในส่วนของ ปุ่ม Class btn * ต้องใส่จุดนะ */
+    color: black;
+    background-color: transparent;
+    /* transparent ไม่มีพื้นหลังในปุ่ม */
+    cursor: pointer;
+    /* เวลาเอา Mouse ชี้จะเป็นตัว Pointer */
+    border-radius: 10px;
+    /* ความมนของมุม */
+    font-size: 12px;
+    padding: 5px 12px;
+    /* ระยะห่างจากตัวข้อความถึงขอบของกล่องข้อความ */
+}
+
+.money-img {
+    /* เป็นส่วนที่ไว้สำหรับตกแต่งในส่วนของ รูปภาพ Class money-img * ต้องใส่จุดนะ */
+    width: 400px;
+    /* ความกว้างของรูปภาพ */
+}
+
+.currency {
+    /* เป็นส่วนที่ไว้สำหรับตกแต่งในส่วนของ รูปภาพ Class currency * ต้องใส่จุดนะ */
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.currency select {
+    /* เป็นส่วนที่ไว้สำหรับตกแต่งในส่วนของ รูปภาพ Class currency tag select * ต้องใส่จุดนะ */
+    padding: 10px 20px 10px 10px;
+    border: 1px solid #dedede;
+    border-radius: 10px;
+    font-size: 16px;
+    appearance: none;
+    /* Appearance เป็น property ที่มาพร้อมกับ CSS3 เพื่อให้ element ต่างๆ แสดงผลโดยยึดตาม OS ของเครื่องเป็นหลัก */
+}
+
+.currency input {
+    /* เป็นส่วนที่ไว้สำหรับตกแต่งในส่วนของ รูปภาพ Class currency tag input * ต้องใส่จุดนะ */
+    border: 0;
+    font-size: 20px;
+    background: transparent;
+    text-align: right; /* ตำแหน่งของตัวอักษรที่ต้องการจะแสดง */
+    border-radius: 10px;
+}
+
+.swap-container { /* เป็นส่วนที่ไว้สำหรับตกแต่งในส่วนของ รูปภาพ Class swap-container * ต้องใส่จุดนะ */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rate { /* เป็นส่วนที่ไว้สำหรับตกแต่งในส่วนของ รูปภาพ Class rate * ต้องใส่จุดนะ */
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+select:focus, /* :focus คือการ Focus ใน tag ที่ต้องการ */
+input:focus,
+button:focus {
+    outline: 0;
+}
